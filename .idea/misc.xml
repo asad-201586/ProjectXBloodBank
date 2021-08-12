@@ -3,7 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/activity_main.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/bg_selector.xml" value="0.17314814814814813" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/bottom_nav_color_selector.xml" value="0.1" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.16018518518518518" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_dashboard.xml" value="0.23489583333333333" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.15648148148148147" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_history.xml" value="0.23489583333333333" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.15648148148148147" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_profile.xml" value="0.23489583333333333" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/item_bg.xml" value="0.17314814814814813" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/item_blood_request_emergency_back.xml" value="0.23489583333333333" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/nav_back.xml" value="0.15092592592592594" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/activity_home.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_history.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_home.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_notifications.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_profile.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/item_blood_request_emergency.xml" value="0.22" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/item_blood_request_normal.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/menu/bottom_nav_menus.xml" value="0.21875" />
       </map>
     </option>
   </component>
