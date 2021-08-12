@@ -76,7 +76,7 @@
     <View
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
-        android:background="@color/white"
+        android:background="#26000000"
         android:layout_width="match_parent"
         android:layout_height="0.5pt"/>
 
@@ -87,8 +87,7 @@
 
         <LinearLayout
             android:paddingEnd="@dimen/_8sdp"
-            android:layout_toLeftOf="@+id/layout_emergency"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -139,32 +138,6 @@
                     android:textSize="@dimen/_14ssp" />
 
             </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layout_emergency"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_emergency" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:text="@string/emergency"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_14ssp" />
 
         </LinearLayout>
 
