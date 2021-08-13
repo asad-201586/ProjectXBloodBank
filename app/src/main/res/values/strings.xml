@@ -27,4 +27,7 @@
     <string name="donations">Donations</string>
     <string name="service_taken">Service Taken</string>
     <string name="_105_days_ago">105 Days Ago</string>
+    <string name="blood_req_details">Aenean dignissim molestie ligulatempus urna ullamcorper eget. Proin venenatis non elit ac feugiat. Aliquam et nibh quis justo semper tristique vel in nisi. Ut tincidunt enim metus, et consectetur mauris vestibulum in. Donec eu iaculis eros.Maecenas odio lectus, varius id lobortis sit amet, tempor et elit.</string>
+    <string name="call_now">Call Now</string>
+    <string name="do_you_want_to_donate">Do You Want To Donate?</string>
 </resources>

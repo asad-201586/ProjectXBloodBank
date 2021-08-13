@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_bloodRequestDetailsFragment"
+            app:destination="@id/bloodRequestDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
@@ -41,4 +44,9 @@
             android:id="@+id/action_profileFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/bloodRequestDetailsFragment"
+        android:name="com.example.projectxbloodbank.view.fragment.BloodRequestDetailsFragment"
+        android:label="Blood Request"
+        tools:layout="@layout/fragment_blood_request_details" />
 </navigation>

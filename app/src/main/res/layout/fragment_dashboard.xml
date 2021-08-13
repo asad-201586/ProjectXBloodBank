@@ -182,7 +182,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <include layout="@layout/item_blood_request_emergency"/>
+                <include
+                    android:id="@+id/layout_emergency"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/item_blood_request_emergency"/>
                 <include layout="@layout/item_blood_request_normal"/>
                 <include layout="@layout/item_blood_request_normal"/>
                 <include layout="@layout/item_blood_request_normal"/>
