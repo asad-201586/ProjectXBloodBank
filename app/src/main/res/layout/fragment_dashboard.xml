@@ -176,7 +176,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--<LinearLayout
                 android:layout_marginTop="@dimen/_16sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:orientation="vertical"
@@ -194,7 +201,7 @@
                 <include layout="@layout/item_blood_request_normal"/>
                 <include layout="@layout/item_blood_request_normal"/>
 
-            </LinearLayout>
+            </LinearLayout>-->
 
         </LinearLayout>
 

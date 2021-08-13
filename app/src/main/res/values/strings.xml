@@ -36,7 +36,8 @@
     <string name="hospital_name">Hospital Name</string>
     <string name="location">Location</string>
     <string name="post">Post</string>
-    <string name="blood_request">https://jsonkeeper.com/b/F8B0</string>
+    <string name="blood_request">https://jsonkeeper.com/b/P3UI</string>
+    <string name="something_went_wrong">Something went wrong, Try again</string>
 
     <string-array name="blood_groups">
 
