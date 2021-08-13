@@ -24,4 +24,7 @@
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="action">Action</string>
+    <string name="donations">Donations</string>
+    <string name="service_taken">Service Taken</string>
+    <string name="_105_days_ago">105 Days Ago</string>
 </resources>
