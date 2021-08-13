@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.FragmentHistoryBinding;
+import com.example.projectxbloodbank.others.GlobalValues;
 import com.example.projectxbloodbank.view.activity.MainActivity;
 
 public class HistoryFragment extends Fragment {
@@ -28,5 +29,6 @@ public class HistoryFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        GlobalValues.currentFragment = "history";
     }
 }

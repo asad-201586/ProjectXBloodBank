@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/bg_selector.xml" value="0.17314814814814813" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/bottom_nav_color_selector.xml" value="0.1" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/circle_back.xml" value="0.23489583333333333" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.16018518518518518" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_dashboard.xml" value="0.23489583333333333" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.15648148148148147" />
@@ -21,7 +22,8 @@
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_history.xml" value="0.21875" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_home.xml" value="0.21875" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_notifications.xml" value="0.21875" />
-        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_profile.xml" value="0.21875" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/item_activity_log.xml" value="0.21875" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/item_blood_request_emergency.xml" value="0.22" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/layout/item_blood_request_normal.xml" value="0.21875" />
         <entry key="..\:/projects/client/Project_X_Blood_Bank/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21875" />

@@ -1,25 +1,24 @@
 package com.example.projectxbloodbank.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.ActivityMainBinding;
-import com.example.projectxbloodbank.others.GlobalMethods;
-import com.example.projectxbloodbank.view.fragment.DashboardFragment;
-import com.example.projectxbloodbank.view.fragment.HistoryFragment;
-import com.example.projectxbloodbank.view.fragment.ProfileFragment;
+import com.example.projectxbloodbank.others.GlobalValues;
 import com.gauravk.bubblenavigation.listener.BubbleNavigationChangeListener;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements BubbleNavigationChangeListener{
 
     private ActivityMainBinding binding;
-    private Context context;
+    private NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,24 +26,43 @@ public class MainActivity extends AppCompatActivity implements BubbleNavigationC
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        context = this;
+        setUpNavigation();
         binding.bubbleNav.setNavigationChangeListener(this);
+    }
+
+    private void setUpNavigation() {
+        setSupportActionBar(binding.toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        navController = Navigation.findNavController(this,R.id.my_nav_host_fragment);
+        NavigationUI.setupActionBarWithNavController(this, navController, binding.drawerLayout);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        return NavigationUI.navigateUp(navController, binding.drawerLayout);
     }
 
     @Override
     public void onNavigationChanged(View view, int position) {
-        switch (position){
-            case 0:
-                GlobalMethods.goToOtherFragment(context,new DashboardFragment());
-                break;
+        selectFrag(position);
+    }
 
-            case 1:
-                GlobalMethods.goToOtherFragment(context,new HistoryFragment());
-                break;
-
-            case 2:
-                GlobalMethods.goToOtherFragment(context,new ProfileFragment());
-                break;
+    private void selectFrag(int position) {
+        if (GlobalValues.currentFragment.equals("dashboard")){
+            if (position == 1) navController.navigate(R.id.action_dashboardFragment_to_historyFragment);
+            else navController.navigate(R.id.action_dashboardFragment_to_profileFragment);
         }
+        else if (GlobalValues.currentFragment.equals("history")){
+            if (position == 0) navController.navigate(R.id.action_historyFragment_to_dashboardFragment);
+            else navController.navigate(R.id.action_historyFragment_to_profileFragment);
+        }
+        else {
+            if (position == 1) navController.navigate(R.id.action_profileFragment_to_historyFragment);
+            else navController.navigate(R.id.action_profileFragment_to_dashboardFragment);
+        }
+
     }
 }

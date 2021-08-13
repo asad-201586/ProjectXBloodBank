@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.FragmentDashboardBinding;
+import com.example.projectxbloodbank.others.GlobalValues;
 import com.example.projectxbloodbank.view.activity.MainActivity;
 
 public class DashboardFragment extends Fragment {
@@ -30,5 +31,6 @@ public class DashboardFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //your code here
+        GlobalValues.currentFragment = "dashboard";
     }
 }

@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.FragmentProfileBinding;
+import com.example.projectxbloodbank.others.GlobalValues;
 import com.example.projectxbloodbank.view.activity.MainActivity;
 
 public class ProfileFragment extends Fragment {
@@ -29,5 +30,6 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        GlobalValues.currentFragment = "profile";
     }
 }
