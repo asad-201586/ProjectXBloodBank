@@ -10,12 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.daimajia.androidanimations.library.Techniques;
-import com.daimajia.androidanimations.library.YoYo;
-import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.FragmentHistoryBinding;
 import com.example.projectxbloodbank.others.GlobalValues;
-import com.example.projectxbloodbank.view.activity.MainActivity;
 
 public class HistoryFragment extends Fragment {
 

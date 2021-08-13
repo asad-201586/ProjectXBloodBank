@@ -42,6 +42,7 @@
                     android:layout_height="@dimen/_120sdp"/>
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_post_now"
                     android:background="@drawable/item_bg"
                     android:text="@string/post_now"
                     android:textAllCaps="false"

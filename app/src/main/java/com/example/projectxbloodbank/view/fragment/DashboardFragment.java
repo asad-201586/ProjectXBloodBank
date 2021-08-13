@@ -44,5 +44,8 @@ public class DashboardFragment extends Fragment {
                 navController.navigate(R.id.action_dashboardFragment_to_bloodRequestDetailsFragment);
             }
         });
+
+        binding.buttonPostNow.setOnClickListener(v ->
+                navController.navigate(R.id.action_dashboardFragment_to_postForBloodFragment));
     }
 }
