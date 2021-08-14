@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.projectxbloodbank.R;
-import com.example.projectxbloodbank.adapter.BloodRequestsAdapter;
 import com.example.projectxbloodbank.databinding.FragmentBloodRequestDetailsBinding;
 import com.example.projectxbloodbank.model.bloodRequestRes.Datum;
+import com.example.projectxbloodbank.others.GlobalValues;
 import com.squareup.picasso.Picasso;
 
 public class BloodRequestDetailsFragment extends Fragment {
@@ -31,6 +31,7 @@ public class BloodRequestDetailsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        GlobalValues.currentFragment = "blood_request_details";
         model = (Datum) requireArguments().getSerializable("model");
         setData();
     }

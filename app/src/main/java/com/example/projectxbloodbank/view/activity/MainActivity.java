@@ -51,17 +51,22 @@ public class MainActivity extends AppCompatActivity implements BubbleNavigationC
     }
 
     private void selectFrag(int position) {
-        if (GlobalValues.currentFragment.equals("dashboard")){
-            if (position == 1) navController.navigate(R.id.action_dashboardFragment_to_historyFragment);
-            else navController.navigate(R.id.action_dashboardFragment_to_profileFragment);
-        }
-        else if (GlobalValues.currentFragment.equals("history")){
-            if (position == 0) navController.navigate(R.id.action_historyFragment_to_dashboardFragment);
-            else navController.navigate(R.id.action_historyFragment_to_profileFragment);
-        }
-        else {
-            if (position == 1) navController.navigate(R.id.action_profileFragment_to_historyFragment);
-            else navController.navigate(R.id.action_profileFragment_to_dashboardFragment);
+        switch (GlobalValues.currentFragment) {
+            case "dashboard":
+                if (position == 1)
+                    navController.navigate(R.id.action_dashboardFragment_to_historyFragment);
+                else navController.navigate(R.id.action_dashboardFragment_to_profileFragment);
+                break;
+            case "history":
+                if (position == 0)
+                    navController.navigate(R.id.action_historyFragment_to_dashboardFragment);
+                else navController.navigate(R.id.action_historyFragment_to_profileFragment);
+                break;
+            case "profile":
+                if (position == 1)
+                    navController.navigate(R.id.action_profileFragment_to_historyFragment);
+                else navController.navigate(R.id.action_profileFragment_to_dashboardFragment);
+                break;
         }
 
     }

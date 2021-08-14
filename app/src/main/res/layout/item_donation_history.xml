@@ -13,6 +13,7 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/text_year"
         android:background="@drawable/year_back"
         android:paddingStart="@dimen/_16sdp"
         android:paddingEnd="@dimen/_16sdp"
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/text_month"
                 android:text="August"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
@@ -50,6 +52,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:id="@+id/text_day"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="18"
                 android:textStyle="bold"
@@ -84,6 +87,7 @@
                         android:src="@drawable/ic_location" />
 
                     <TextView
+                        android:id="@+id/text_location"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -107,6 +111,7 @@
                         android:src="@drawable/ic_plus_outer_square" />
 
                     <TextView
+                        android:id="@+id/text_hospital"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -124,6 +129,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/text_blood_group"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="O+"
@@ -131,6 +137,7 @@
                         android:textSize="@dimen/_20ssp" />
 
                     <TextView
+                        android:id="@+id/text_donation_duration"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"

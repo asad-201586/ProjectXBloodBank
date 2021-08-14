@@ -1,6 +1,9 @@
 package com.example.projectxbloodbank.others;
 
 import android.content.Context;
+import android.text.format.DateFormat;
+import android.util.Log;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -34,6 +37,27 @@ public class GlobalMethods {
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         return dateFormat.format(date);
+    }
+
+    public static void setYearMonthDay(String dateStr, TextView textYear,TextView textMonth,TextView textDay){
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy",Locale.US);
+        Date date = null;
+        try{
+            date = sdf.parse(dateStr);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        //String dayOfTheWeek = (String) DateFormat.format("EEEE", date); // Thursday
+        String day          = (String) DateFormat.format("dd",   date); // 20
+        String monthString  = (String) DateFormat.format("MMM",  date); // Jun
+        //String monthNumber  = (String) DateFormat.format("MM",   date); // 06
+        String year         = (String) DateFormat.format("yyyy", date); // 2013
+
+        textYear.setText(year);
+        textMonth.setText(monthString);
+        textDay.setText(day);
     }
 
     public static long calculateDays(String lastDonateDate) {

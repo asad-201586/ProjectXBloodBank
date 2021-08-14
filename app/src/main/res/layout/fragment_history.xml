@@ -84,25 +84,30 @@
 
     </LinearLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"/>
 
-        <LinearLayout
-            android:layout_marginTop="@dimen/_8sdp"
-            android:elevation="4dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
 
-            <include layout="@layout/item_donations"/>
-            <include layout="@layout/item_donations"/>
-            <include layout="@layout/item_donations"/>
-            <include layout="@layout/item_donations"/>
-            <include layout="@layout/item_donations"/>
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="@dimen/_8sdp"-->
+<!--            android:elevation="4dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
-        </LinearLayout>
+<!--            <include layout="@layout/item_donation_history"/>-->
+<!--            <include layout="@layout/item_donation_history"/>-->
+<!--            <include layout="@layout/item_donation_history"/>-->
+<!--            <include layout="@layout/item_donation_history"/>-->
+<!--            <include layout="@layout/item_donation_history"/>-->
 
-    </androidx.core.widget.NestedScrollView>
+<!--        </LinearLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
 
 </LinearLayout>

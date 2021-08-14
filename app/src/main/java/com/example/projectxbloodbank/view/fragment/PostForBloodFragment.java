@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.FragmentPostForBloodBinding;
+import com.example.projectxbloodbank.others.GlobalValues;
 
 public class PostForBloodFragment extends Fragment {
 
@@ -27,5 +28,6 @@ public class PostForBloodFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        GlobalValues.currentFragment = "post_for_blood";
     }
 }
