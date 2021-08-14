@@ -98,8 +98,9 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/text_you_can_donate"
                 android:layout_marginStart="@dimen/_16sdp"
-                android:text="You Can Donate Now"
+                android:text="@string/you_can_donate_now"
                 android:textSize="@dimen/_12ssp"
                 android:textColor="#4D000000"
                 android:textStyle="bold"

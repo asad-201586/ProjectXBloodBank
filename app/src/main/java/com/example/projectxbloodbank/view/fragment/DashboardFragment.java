@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.LayoutInflater;
@@ -18,8 +17,8 @@ import android.view.ViewGroup;
 import com.example.projectxbloodbank.R;
 import com.example.projectxbloodbank.databinding.FragmentDashboardBinding;
 import com.example.projectxbloodbank.network.callingApi.BloodRequestsApi;
+import com.example.projectxbloodbank.network.callingApi.DonationInfoApi;
 import com.example.projectxbloodbank.others.GlobalValues;
-import com.example.projectxbloodbank.view.activity.MainActivity;
 
 public class DashboardFragment extends Fragment {
 
@@ -36,21 +35,20 @@ public class DashboardFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //your code here
+
         GlobalValues.currentFragment = "dashboard";
         navController = Navigation.findNavController(binding.getRoot());
-
-//        binding.layoutEmergency.layoutEmg.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                navController.navigate(R.id.action_dashboardFragment_to_bloodRequestDetailsFragment);
-//            }
-//        });
 
         binding.buttonPostNow.setOnClickListener(v ->
                 navController.navigate(R.id.action_dashboardFragment_to_postForBloodFragment));
 
         getBloodRequests();
+        getDonationInfo();
+    }
+
+    private void getDonationInfo() {
+        DonationInfoApi api = new DonationInfoApi(requireContext(),binding.textLastDonated,binding.textYouCanDonate);
+        api.donationInfo();
     }
 
     private void getBloodRequests() {

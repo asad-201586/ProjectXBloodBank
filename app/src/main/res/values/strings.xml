@@ -38,6 +38,8 @@
     <string name="post">Post</string>
     <string name="blood_request">https://jsonkeeper.com/b/P3UI</string>
     <string name="something_went_wrong">Something went wrong, Try again</string>
+    <string name="you_can_donate_now">You Can Donate Now</string>
+    <string name="you_cant_donate_now">You Cann\'t Donate Now</string>
 
     <string-array name="blood_groups">
 

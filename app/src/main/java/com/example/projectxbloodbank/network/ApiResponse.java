@@ -1,5 +1,6 @@
 package com.example.projectxbloodbank.network;
 
+import com.example.projectxbloodbank.model.DonationInfoResponse;
 import com.example.projectxbloodbank.model.bloodRequestRes.BloodRequestResponse;
 
 import retrofit2.Call;
@@ -11,5 +12,9 @@ public interface ApiResponse {
     @Headers({ "Content-Type: application/json;charset=UTF-8"})
     @GET("/b/P3UI")
     Call<BloodRequestResponse> BloodRequests();
+
+    @Headers({ "Content-Type: application/json;charset=UTF-8"})
+    @GET("/b/OI73")
+    Call<DonationInfoResponse> DonationInfo();
 
 }
