@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavController;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projectxbloodbank.R;
@@ -24,10 +25,12 @@ public class BloodRequestsApi {
     private final Context context;
     private final RecyclerView recyclerView;
     private final CustomLoadingDialog loadingDialog;
+    private final NavController navController;
 
-    public BloodRequestsApi(Context context, RecyclerView recyclerView) {
+    public BloodRequestsApi(Context context, RecyclerView recyclerView,NavController navController) {
         this.context = context;
         this.recyclerView = recyclerView;
+        this.navController = navController;
         loadingDialog = new CustomLoadingDialog(context);
     }
 
@@ -45,7 +48,7 @@ public class BloodRequestsApi {
                 if (response.isSuccessful()){
                     if (Objects.requireNonNull(response.body()).getStatus()){
                         ArrayList<Datum> list = response.body().getData();
-                        BloodRequestsAdapter adapter = new BloodRequestsAdapter(context,list);
+                        BloodRequestsAdapter adapter = new BloodRequestsAdapter(context,list,navController);
                         recyclerView.setAdapter(adapter);
                     }
                 }else

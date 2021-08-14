@@ -39,8 +39,8 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:src="@drawable/simple_man"
-                    android:layout_width="@dimen/_35sdp"
-                    android:layout_height="@dimen/_35sdp"/>
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"/>
 
                 <TextView
                     android:text="Naimul Islam"

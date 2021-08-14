@@ -57,7 +57,7 @@ public class DashboardFragment extends Fragment {
         binding.recyclerView.setHasFixedSize(true);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
-        BloodRequestsApi api = new BloodRequestsApi(requireContext(),binding.recyclerView);
+        BloodRequestsApi api = new BloodRequestsApi(requireContext(),binding.recyclerView,navController);
         api.bloodRequests();
     }
 }
