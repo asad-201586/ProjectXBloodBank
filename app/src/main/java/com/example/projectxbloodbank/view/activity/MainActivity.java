@@ -67,6 +67,20 @@ public class MainActivity extends AppCompatActivity implements BubbleNavigationC
                     navController.navigate(R.id.action_profileFragment_to_historyFragment);
                 else navController.navigate(R.id.action_profileFragment_to_dashboardFragment);
                 break;
+
+            case "blood_request_details":
+                if (position == 0)
+                    navController.navigate(R.id.action_bloodRequestDetailsFragment_to_dashboardFragment);
+                else if (position == 1) navController.navigate(R.id.action_bloodRequestDetailsFragment_to_historyFragment);
+                else navController.navigate(R.id.action_bloodRequestDetailsFragment_to_profileFragment);
+                break;
+
+            case "post_for_blood":
+                if (position == 0)
+                    navController.navigate(R.id.action_postForBloodFragment_to_dashboardFragment);
+                else if (position == 1) navController.navigate(R.id.action_postForBloodFragment_to_historyFragment);
+                else navController.navigate(R.id.action_postForBloodFragment_to_profileFragment);
+                break;
         }
 
     }

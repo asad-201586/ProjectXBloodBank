@@ -40,6 +40,11 @@
     <string name="something_went_wrong">Something went wrong, Try again</string>
     <string name="you_can_donate_now">You Can Donate Now</string>
     <string name="you_cant_donate_now">You Cann\'t Donate Now</string>
+    <string name="home">Home</string>
+    <string name="rate_this_app">Rate This App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
 
     <string-array name="blood_groups">
 

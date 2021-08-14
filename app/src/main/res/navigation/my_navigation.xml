@@ -51,10 +51,30 @@
         android:id="@+id/bloodRequestDetailsFragment"
         android:name="com.example.projectxbloodbank.view.fragment.BloodRequestDetailsFragment"
         android:label="Blood Request"
-        tools:layout="@layout/fragment_blood_request_details" />
+        tools:layout="@layout/fragment_blood_request_details" >
+        <action
+            android:id="@+id/action_bloodRequestDetailsFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_bloodRequestDetailsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_bloodRequestDetailsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/postForBloodFragment"
         android:name="com.example.projectxbloodbank.view.fragment.PostForBloodFragment"
         android:label="Post For Blood"
-        tools:layout="@layout/fragment_post_for_blood" />
+        tools:layout="@layout/fragment_post_for_blood" >
+        <action
+            android:id="@+id/action_postForBloodFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_postForBloodFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_postForBloodFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>
