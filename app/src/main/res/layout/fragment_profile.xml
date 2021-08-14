@@ -38,11 +38,13 @@
                 android:layout_height="wrap_content">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_profile"
                     android:src="@drawable/simple_man"
                     android:layout_width="@dimen/_60sdp"
                     android:layout_height="@dimen/_60sdp"/>
 
                 <TextView
+                    android:id="@+id/text_name"
                     android:text="Naimul Islam"
                     android:textSize="@dimen/_12ssp"
                     android:textColor="#000000"
@@ -52,6 +54,7 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
+                    android:id="@+id/text_description"
                     android:text="@string/sample_text"
                     android:textAlignment="center"
                     android:textSize="@dimen/_10ssp"
@@ -69,19 +72,18 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_location" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:text="Location: "
                         android:textColor="@color/black"
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
+                        android:id="@+id/text_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -118,15 +120,16 @@
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
+                        android:id="@+id/text_blood_group"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
                         android:layout_gravity="center_vertical"
                         android:text="O+"
-                        android:textStyle="bold"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/_20ssp" />
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
@@ -205,23 +208,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.5pt"/>
 
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-                <include layout="@layout/item_activity_log"/>
-
-            </LinearLayout>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 

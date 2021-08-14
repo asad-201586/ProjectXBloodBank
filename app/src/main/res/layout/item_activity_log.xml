@@ -9,6 +9,7 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/text_date"
         android:text="01-05-2021"
         android:textColor="@color/black"
         android:textSize="@dimen/_10ssp"
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/text_time"
         android:text="12:52:00"
         android:textColor="@color/black"
         android:textSize="@dimen/_10ssp"
@@ -27,6 +29,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/text_action"
         android:text="Logout"
         android:textColor="@color/black"
         android:textSize="@dimen/_10ssp"
