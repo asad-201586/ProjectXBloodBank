@@ -85,29 +85,14 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewDonation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-<!--    <androidx.core.widget.NestedScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_marginTop="@dimen/_8sdp"-->
-<!--            android:elevation="4dp"-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <include layout="@layout/item_donation_history"/>-->
-<!--            <include layout="@layout/item_donation_history"/>-->
-<!--            <include layout="@layout/item_donation_history"/>-->
-<!--            <include layout="@layout/item_donation_history"/>-->
-<!--            <include layout="@layout/item_donation_history"/>-->
-
-<!--        </LinearLayout>-->
-
-<!--    </androidx.core.widget.NestedScrollView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recyclerViewServiceTaken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

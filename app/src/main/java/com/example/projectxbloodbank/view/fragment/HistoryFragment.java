@@ -39,6 +39,9 @@ public class HistoryFragment extends Fragment {
                 binding.textServiceTakenZoom.setVisibility(View.GONE);
                 binding.textDonations.setTag("donations_zoom");
                 binding.textServiceTaken.setTag("service");
+
+                binding.recyclerViewDonation.setVisibility(View.VISIBLE);
+                binding.recyclerViewServiceTaken.setVisibility(View.GONE);
             }
         });
 
@@ -50,6 +53,9 @@ public class HistoryFragment extends Fragment {
                 binding.textServiceTakenZoom.setVisibility(View.VISIBLE);
                 binding.textDonations.setTag("donations");
                 binding.textServiceTaken.setTag("service_zoom");
+
+                binding.recyclerViewDonation.setVisibility(View.GONE);
+                binding.recyclerViewServiceTaken.setVisibility(View.VISIBLE);
             }
         });
 
@@ -57,10 +63,15 @@ public class HistoryFragment extends Fragment {
     }
 
     private void getDonationHistory() {
-        binding.recyclerView.setHasFixedSize(true);
-        binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+        binding.recyclerViewDonation.setHasFixedSize(true);
+        binding.recyclerViewDonation.setLayoutManager(new LinearLayoutManager(requireContext()));
+        binding.recyclerViewServiceTaken.setHasFixedSize(true);
+        binding.recyclerViewServiceTaken.setLayoutManager(new LinearLayoutManager(requireContext()));
 
-        DonationHistoryApi api = new DonationHistoryApi(requireContext(),binding.recyclerView);
-        api.donationHistory();
+        DonationHistoryApi apiDonation = new DonationHistoryApi(requireContext(),binding.recyclerViewDonation,"donation");
+        apiDonation.donationHistory();
+
+        DonationHistoryApi apiServiceTaken = new DonationHistoryApi(requireContext(),binding.recyclerViewServiceTaken,"service_taken");
+        apiServiceTaken.donationHistory();
     }
 }

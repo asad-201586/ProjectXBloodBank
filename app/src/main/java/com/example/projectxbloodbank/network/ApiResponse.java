@@ -21,4 +21,9 @@ public interface ApiResponse {
     @Headers({ "Content-Type: application/json;charset=UTF-8"})
     @GET("/b/YTAV")
     Call<DonationHistoryResponse> DonationHistory();
+
+    @Headers({ "Content-Type: application/json;charset=UTF-8"})
+    @GET("/b/TQEL")
+    Call<DonationHistoryResponse> ServiceTakenHistory();
+
 }

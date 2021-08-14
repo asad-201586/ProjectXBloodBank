@@ -23,20 +23,31 @@ import retrofit2.Response;
 public class DonationHistoryApi {
     private final Context context;
     private final RecyclerView recyclerView;
+    private final String type;
     private final CustomLoadingDialog loadingDialog;
 
-    public DonationHistoryApi(Context context, RecyclerView recyclerView) {
+    public DonationHistoryApi(Context context, RecyclerView recyclerView,String type) {
         this.context = context;
         this.recyclerView = recyclerView;
+        this.type = type;
         loadingDialog = new CustomLoadingDialog(context);
     }
 
     public void donationHistory(){
         loadingDialog.start();
-        Call<DonationHistoryResponse> call = RetrofitClient
-                .getInstance()
-                .getApi()
-                .DonationHistory();
+
+        Call<DonationHistoryResponse> call;
+        if (type.equals("donation")){
+            call = RetrofitClient
+                    .getInstance()
+                    .getApi()
+                    .DonationHistory();
+        }else {
+            call = RetrofitClient
+                    .getInstance()
+                    .getApi()
+                    .ServiceTakenHistory();
+        }
 
         call.enqueue(new Callback<DonationHistoryResponse>() {
             @Override
